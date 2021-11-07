@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data.Common;
 
+/* SAMUELE CREA FRACTION IN C# WITH TEST IN NUnit FRAMEWORK AND RESHARPER */
 namespace Fraction {
     public class Fraction
     {
