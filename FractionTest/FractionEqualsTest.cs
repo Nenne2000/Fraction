@@ -20,7 +20,7 @@ namespace FractionTest
             var f1 = new Fraction.Fraction(1, 2);
             var f2 = new Fraction.Fraction(2, 4);
             Assert.That(f1.Equals(f2));
-        }
+        } 
 
     }
 }

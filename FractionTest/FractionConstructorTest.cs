@@ -46,7 +46,7 @@ namespace FractionTest {
         [Test]
         public void TryNormalizeSign()
         {
-            var f1 = new Fraction.Fraction(1, -1);
+            var f1 = new Fraction.Fraction(1, -1); 
             var f2 = new Fraction.Fraction(-1, 1);
             Assert.That(f1.Equals(f2));
         }

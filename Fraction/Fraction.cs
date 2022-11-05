@@ -123,7 +123,7 @@ namespace Fraction {
         }
         //----
         //IMPLICIT INT TO FRACT CONVERSION
-        public static implicit operator Fraction(int i) => new(i);
+        public static implicit operator Fraction(int i) => new(i); 
         //----
     }
 }

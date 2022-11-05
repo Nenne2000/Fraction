@@ -60,6 +60,6 @@ namespace FractionTest
             var f2 = new Fraction.Fraction(0);
             Assert.That(() => f1 / f2 , Throws.InstanceOf<DivideByZeroException>());
         }
-
+         
     }
 }

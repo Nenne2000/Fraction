@@ -35,7 +35,7 @@ namespace FractionTest
         public void IntConversionViolation()
         {
             var f1 = new Fraction.Fraction(42, 11);
-            Assert.That(() => f1.ToInt(), Throws.InstanceOf<ArgumentOutOfRangeException>());
+            Assert.That(() => f1.ToInt(), Throws.InstanceOf<ArgumentOutOfRangeException>()); 
         }
     }
 }
