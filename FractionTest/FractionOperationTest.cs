@@ -20,7 +20,7 @@ namespace FractionTest
         public void Subtract()
         {
             var f1 = new Fraction.Fraction(33, 7);
-            var f2 = new Fraction.Fraction(4, 1);
+            var f2 = new Fraction.Fraction(4);
             var res = new Fraction.Fraction(-5, 7);
             Assert.That(res.Equals(f2 - f1));
         }
@@ -28,18 +28,18 @@ namespace FractionTest
         [Test]
         public void Multiplication()
         {
-            var f1 = new Fraction.Fraction(11, 1);
+            var f1 = new Fraction.Fraction(11);
             var f2 = new Fraction.Fraction(1, 11);
-            var res = new Fraction.Fraction(1, 1);
+            var res = new Fraction.Fraction(1);
             Assert.That(res.Equals(f2 * f1));
         }
 
         [Test]
         public void MultiplicationZero()
         {
-            var f1 = new Fraction.Fraction(42, 1);
+            var f1 = new Fraction.Fraction(42);
             var f2 = new Fraction.Fraction(0);
-            var res = new Fraction.Fraction(0, 1);
+            var res = new Fraction.Fraction();
             Assert.That(res.Equals(f2 * f1));
         }
 
@@ -56,8 +56,8 @@ namespace FractionTest
         [Test]
         public void DivisionZero()
         {
-            var f1 = new Fraction.Fraction(42, 1);
-            var f2 = new Fraction.Fraction(0, 1);
+            var f1 = new Fraction.Fraction(42);
+            var f2 = new Fraction.Fraction(0);
             Assert.That(() => f1 / f2 , Throws.InstanceOf<DivideByZeroException>());
         }
 

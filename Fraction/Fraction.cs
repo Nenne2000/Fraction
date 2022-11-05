@@ -113,6 +113,7 @@ namespace Fraction {
         {
             return !f1.Equals(f2);
         }
+
         //----
         //TO_INT METHOD
         public int ToInt()
@@ -120,6 +121,9 @@ namespace Fraction {
             if (1 != Den) throw new ArgumentOutOfRangeException();
             return Num;
         }
+        //----
+        //IMPLICIT INT TO FRACT CONVERSION
+        public static implicit operator Fraction(int i) => new(i);
         //----
     }
 }

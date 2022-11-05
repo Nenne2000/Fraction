@@ -37,9 +37,7 @@ namespace FractionTest {
         [Test]
         public void TrySemplification()
         {
-            var n = 2;
-            var d = 4;
-            var f1 = new Fraction.Fraction(n, d);
+            var f1 = new Fraction.Fraction(2, 4);
             var f2 = new Fraction.Fraction(1, 2);
             Assert.That(f1.Equals(f2));
 
@@ -48,13 +46,11 @@ namespace FractionTest {
         [Test]
         public void TryNormalizeSign()
         {
-            var n = 1;
-            var d = -1;
-            var f1 = new Fraction.Fraction(n, d);
+            var f1 = new Fraction.Fraction(1, -1);
             var f2 = new Fraction.Fraction(-1, 1);
             Assert.That(f1.Equals(f2));
-
         }
+
         [Test]
         public void ZeroDenThrows()
         {

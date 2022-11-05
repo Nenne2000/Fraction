@@ -9,8 +9,8 @@ namespace FractionTest
         [Test]
         public void ZeroIsEqual()
         {
-            var f1 = new Fraction.Fraction(0, 2);
-            var f2 = new Fraction.Fraction(0);
+            var f1 = new Fraction.Fraction();
+            var f2 = new Fraction.Fraction(0, 22);
             Assert.That(f1.Equals(f2));
         }
 
